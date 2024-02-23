@@ -3,7 +3,7 @@ import gymnasium
 import gym_trading_env
 
 # Load CSV into DataFrame
-df = pd.read_csv('moneymakingmachine\EURUSD_M1.csv', header=None, names=["timestamp", "open", "high", "low", "close", "volume"])
+df = pd.read_csv('EURUSD_M1.csv', header=None, names=["timestamp", "open", "high", "low", "close", "volume"])
 
 # Convert timestamp column to datetime objects
 df['timestamp'] = pd.to_datetime(df['timestamp'])
